@@ -26,7 +26,7 @@ std::vector<int>* ReturnPointer()
 }
 ```
 
-###Benchmark Code
+### Benchmark Code
 
 The code used for benchmark is below.
 
@@ -80,7 +80,7 @@ timer stopwatch;
 }
 ```
 
-###Benchmark Result
+### Benchmark Result
 
 The benchmark result for different C++ compilers are presented below.
 
