@@ -98,7 +98,7 @@ int main()
 	{
 		stopwatch.start("ReturnPointer");
 		Foo foo;
-		std::vector<int>* p;
+		std::vector<int>* p = nullptr;
 		for (int i = 0; i < MAX_LOOP; ++i)
 		{
 			foo.Add(i);

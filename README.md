@@ -70,7 +70,7 @@ timer stopwatch;
 {
     stopwatch.start("ReturnPointer");
     Foo foo;
-    std::vector<int>* p;
+    std::vector<int>* p = nullptr;
     for (int i = 0; i < MAX_LOOP; ++i)
     {
         foo.Add(i);
@@ -80,7 +80,7 @@ timer stopwatch;
 }
 ```
 
-### Benchmark Result
+### Benchmark Results
 
 The benchmark result for different C++ compilers are presented below.
 
