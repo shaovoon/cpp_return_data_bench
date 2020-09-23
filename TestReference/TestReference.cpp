@@ -71,6 +71,7 @@ int main()
 			foo.Add(i);
 			foo.PassByReference(vec);
 		}
+		std::cout << "1st element:" << vec[0] << std::endl;
 		stopwatch.stop();
 	}
 	{
@@ -82,6 +83,7 @@ int main()
 			foo.Add(i);
 			p = &foo.ReturnReference();
 		}
+		std::cout << "1st element:" << (*p)[0] << std::endl;
 		stopwatch.stop();
 	}
 	{
@@ -93,6 +95,7 @@ int main()
 			foo.Add(i);
 			foo.PassByPointer(&vec);
 		}
+		std::cout << "1st element:" << vec[0] << std::endl;
 		stopwatch.stop();
 	}
 	{
@@ -104,6 +107,7 @@ int main()
 			foo.Add(i);
 			p = foo.ReturnPointer();
 		}
+		std::cout << "1st element:" << (*p)[0] << std::endl;
 		stopwatch.stop();
 	}
 
